@@ -22,6 +22,14 @@ def hello():
 def kurs():
     return "<p>Hallo Kurs 25-01</p>"
 
+@app.route('/about')
+def about():
+    return "Mein Name ist Alexander, das hier ist eine Übung zu Flask"
+
+@app.route('/info')
+def info():
+    return "Dies ist eine Flask 3.1.0 API"
+
 
 if __name__ == "__main__":
     app.run(debug=True)
